@@ -1,4 +1,6 @@
-import { SupabaseAuthClient } from '@supabase/supabase-js/dist/main/lib/SupabaseAuthClient';
+import { useEffect, useState } from 'react';
+import { supabase } from './supabaseClient';
+import { Avatar, Button } from '@chakra-ui/react';
 
 export default function PersonalAvatar({ url, onUpload }) {
   const [avatarUrl, setAvatarUrl] = useState(null);
